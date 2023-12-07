@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>EasyWeather</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>EasyWeather</h1>
+      <form class="form">
+        <input
+          type="text"
+          class="search"
+          placeholder="Search for a city"
+          autocomplete="off"
+          autofocus
+          id="search"
+        />
+        <button type="submit" value="Search" class="submit">submit</button>
+      </form>
+      <ul class="cities"></ul>
+    </div>
+    <div class="error"></div>
+    <div class="weather">
+      <h2 class="city"></h2>
+      <p class="temp"></p>
+      <p class="desc"></p>
+      <p class="humidity"></p>
+      <p class="wind"></p>
+      <p class="aqi"></p>
+    </div>
+    <script defer src="script.js"></script>
+  </body>
+</html>
