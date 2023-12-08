@@ -1,0 +1,169 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Modern and clean font with fallbacks */
+  background-color: #f4f4f4; /* Subtle background color */
+}
+
+.container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Header styles */
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333; /* Header text color */
+}
+
+.form {
+  margin-top: 20px;
+}
+
+.search {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.submit {
+  padding: 10px 20px;
+  background-color: #4caf50; /* Green submit button */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Search results list */
+.cities {
+  list-style: none;
+  padding: 0;
+}
+
+.cities li {
+  background-color: #fff; /* White background for each city item */
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+/* Weather section styles */
+.weather {
+  display: flex;
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* White background for the weather card */
+  border-radius: 10px;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+.city {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.condition-text {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.descIcon,
+.condition-icon {
+  width: 80px;
+}
+
+.temp,
+.humidity,
+.wind,
+.aqi {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Forecast section styles */
+.forecast {
+  display: none;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #e0e0e0; /* Background color for the forecast section */
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.forecast-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.forecast-item {
+  width: 50%;
+  margin: 10px 5px;
+  padding: 15px;
+  background-color: #f9f9f9; /* Light gray background for each forecast item */
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Slightly increased box shadow */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.forecast-item p {
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #333;
+}
+
+.forecast-item > .condition-text {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.forecast-item h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Error section styles */
+.error {
+  display: none;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #ff6666; /* Light red background for error messages */
+  color: #fff;
+  border-radius: 5px;
+}
