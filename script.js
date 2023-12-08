@@ -107,6 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
       forecastItem.classList.add("forecast-item");
 
       const dateElement = document.createElement("p");
+      dateElement.classList.add("date");
       dateElement.textContent = date;
 
       const conditionIconElement = document.createElement("img");
